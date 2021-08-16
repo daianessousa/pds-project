@@ -1,0 +1,59 @@
+.homeApresentation {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 640px 1fr;
+}
+
+.initialImage {
+    background-image: linear-gradient(17.67deg, #17C3B2 16.84%, rgba(23, 195, 178, 0) 83.83%), url('../../images/techWoman.jpg');
+    background-repeat: no-repeat;
+}
+
+.homeAcess {
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+
+    .container {
+        max-width: 650px;
+    }
+
+    label {
+        font-size: 1.875rem;
+    }
+
+    input {
+        width: 100%;
+        height: 5rem;
+        background: #FEF9EF;
+        border: none;
+        border-radius: 10px;
+        margin-top: 1rem;
+
+        &.submit {
+            background: #FE6D73;
+            color: #FFF;
+            border-radius: 0.5rem;
+            border: none;
+            font-size: 1.5rem;
+            max-width: 50%;
+            margin-top: 2rem;
+            margin-right: 0.5rem;
+            padding: 0.5rem 2.5rem;
+
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(0.7)
+            }
+        }
+    }
+
+
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: 700;
+}

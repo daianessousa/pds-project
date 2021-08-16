@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffafa;
+    color: #333533;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    border: none; 
+    transition: filter 0.2s;
+
+    &:hover{
+        filter: brightness(0.8)
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #FE6D73;
+}
