@@ -11,12 +11,72 @@
 }
 
 .homeAcess {
-    display: flex;
-    align-items: center;
-    padding-left: 5rem;
+        flex: 8;
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
 
     .container {
-        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 328px;
+        align-items: stretch;
+        text-align: center;
+
+        form{
+            input{
+                height: 50px;
+                border-radius: 8px;
+                padding: 0 16px;
+                background: #fff;
+                border: 1px solid #a8a8b3;
+                
+            }
+            p{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .submit{
+                    background:#17C3B2;
+                    margin-bottom: 10px;
+                    a{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            
+        }
+
+        //max-width: 650px;
+        .button-google{
+            margin-top: 10px;
+            padding: 10px;
+            height: 50px;
+            border-radius: 8px;
+            font-weight: 500;
+            background: #ea4335;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            border: 0;
+
+            transition: filter 0.2s;
+
+            img {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
     }
 
     label {

@@ -6,13 +6,11 @@ import { Home } from "./pages/Home";
 function App() {
   return (
     <BrowserRouter>
-    <AuthContextProvider>
-      <Switch>
-        <Route path="/" exact component={Home}/>
-      </Switch>
-    </AuthContextProvider>
-    
-     
+      <AuthContextProvider>
+        <Switch>
+          <Route path="/" exact component={Home}/>
+        </Switch>
+      </AuthContextProvider>
     </BrowserRouter>
   );
 }
