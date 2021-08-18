@@ -8,6 +8,7 @@
   height: 100vh;
   padding-top: 2rem;
 
+
   .user-info {
     display: flex;
     flex-direction: column;
@@ -18,13 +19,12 @@
       height: 7rem;
       border-radius: 50%;
     }
-
     > p {
       margin-top: .9rem;
       font-size: .8rem;
     }
   }
-
+   
   p {
     font-weight: 700;
   }
