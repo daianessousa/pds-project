@@ -32,10 +32,10 @@
         font-size: 1.875rem;
     }
 
-    form {
+    .loginForm {
         input {
             width: 100%;
-            height: 5rem;
+            height: 3rem;
             background: #FEF9EF;
             border: 0.2px solid #ADAAAA;
             border-radius: 10px;
@@ -87,11 +87,10 @@
     }
 }
 
-.title {
-    margin-bottom: 2rem;
-    font-size: 5rem;
-    font-weight: 700;
-}
+.title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
 
 
 /* Resposive Styles */
@@ -116,7 +115,7 @@
 @media screen and (min-width: 992px) {
     .home{
         max-width: 1440px;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 60%;
     }
     .initialImage {
         display: flex;

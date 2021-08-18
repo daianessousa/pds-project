@@ -14,7 +14,7 @@ export function Register() {
           <div className="container">
             <h1 className="logo">HelpJr</h1>
             <p className="title">Cadastre-se</p>
-            <form>
+            <form className="registerForm">
               <label>Usuário</label>
               <input type="text" />
               <label> Senha </label>

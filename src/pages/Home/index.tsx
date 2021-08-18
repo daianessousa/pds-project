@@ -11,7 +11,7 @@ export function Home() {
             <div className="container">
                <h1 className="logo">HelpJr</h1>
                <p className="title">Login</p>
-               <form>
+               <form className="loginForm">
                   <label>Usuário</label>
                   <input type="text" />
                   <label> Senha </label>
