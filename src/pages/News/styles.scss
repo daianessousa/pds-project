@@ -2,3 +2,15 @@
     background: #DEFBF8;
     display: flex;
 }
+
+.container-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    margin: 10px;
+}
