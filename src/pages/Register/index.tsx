@@ -1,4 +1,4 @@
-import { ButtonGoogle } from '../../components/buttonGoogle'
+import { ButtonGoogle } from '../../components/ButtonGoogle'
 import './styles.scss'
 
 
