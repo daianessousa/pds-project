@@ -1,0 +1,139 @@
+.registerImage {
+  background-image: linear-gradient(17.67deg, #17C3B2 16.84%, rgba(23, 195, 178, 0) 83.83%), url('../../images/techMen.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
+
+
+.logo {
+  color: #17C3B2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 2rem;
+  padding: 2rem 0rem;
+}
+
+
+.registerAcess {
+  display: flex;
+  align-items: center;
+
+  .container {
+    max-width: 650px;
+  }
+
+  label {
+    font-size: 1.875rem;
+  }
+
+  form {
+    input {
+      width: 100%;
+      height: 5rem;
+      background: #FEF9EF;
+      border: 0.2px solid #ADAAAA;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+
+      &.submit {
+        background: #FE6D73;
+        color: #FFF;
+        border-radius: 0.5rem;
+        border: none;
+        font-size: 1.5rem;
+        max-width: 50%;
+        margin-top: 2rem;
+        margin-right: 0.5rem;
+        padding: 0.5rem 2.5rem;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.7)
+        }
+      }
+    }
+
+  }
+}
+
+.separator {
+  font-size: 14px;
+  color: #a8a8b3;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8a8b3;
+    margin-right: 16px;
+  }
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #a8a8b3;
+    margin-left: 16px;
+  }
+}
+
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+
+/* Resposive Styles */
+
+@media screen and (min-width: 0px) {
+  .register {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+  }
+
+  .registerImage {
+    display: none;
+  }
+
+  .registerAcess {
+    padding: 1rem 1rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .register {
+    max-width: 1440px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .registerImage {
+    display: flex;
+    align-items: end;
+
+  }
+
+  .registerAcess {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .registerAcess {
+    padding: 1rem 2rem;
+  }
+}
