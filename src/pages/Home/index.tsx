@@ -5,15 +5,16 @@ import './styles.scss'
 
 export function Home() {
 
-    const {user, signInWithGoogle} = useAuth()
+    const {signInWithGoogle} = useAuth()
 
     return (
         <section className="homeApresentation">
             <div className="initialImage">
-
+                <h1>Iniciando como Dev? Temos as melhores dicas aqui</h1>
             </div>
             <div className="homeAcess">
                 <div className="container">
+                    <h1 className="logo">HelpJr</h1>
                     <p className="title">Login</p>
                     <form>
                         <label>Usuário</label>
@@ -25,6 +26,7 @@ export function Home() {
                         Não possui Conta? <a href="http://">Cadastre-se</a> 
                         </p>
                     </form>
+                    <p className="separator">Ou</p>
                     <button onClick={signInWithGoogle} className="button-google">
                         <img src={googleIconImg} alt="Logo do Google" />
                         Faça login com o Google

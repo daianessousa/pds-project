@@ -11,8 +11,9 @@ body {
 }
 
 button {
-    border: none; 
-    transition: filter 0.2s;
+    border: none;
+    cursor: pointer; 
+    transition: filter 0.2s;  
 
     &:hover{
         filter: brightness(0.8)
@@ -20,6 +21,12 @@ button {
 }
 
 a {
-    text-decoration: none;
     color: #FE6D73;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+         filter: brightness(0.8)
+    }
+    
 }
