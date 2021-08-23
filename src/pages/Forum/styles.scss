@@ -1,0 +1,23 @@
+.news{
+    background: #DEFBF8;
+    display: flex;
+}
+
+.container-news{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.tittle{
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+    
+    >h1{
+        font-size: 3em;
+    }
+
+}
