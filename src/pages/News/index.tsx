@@ -13,6 +13,10 @@ export function News() {
           <div className="cards">
             <Card />
             <Card />
+            <Card />
+            
+            
+            
           </div>
           
         </div>
