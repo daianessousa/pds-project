@@ -1,5 +1,5 @@
 import { Sidebar } from '../../components/Sidebar'
-import { Card } from '../../components/Card'
+import { CardCursos } from '../../components/CardCursos'
 import './styles.scss'
 
 export function Cursos() {
@@ -12,22 +12,22 @@ export function Cursos() {
           </div>
           <div className="cards">
             <div className="card">
-              <Card />
+              <CardCursos />
             </div>
             <div className="card">
-              <Card />
+              <CardCursos />
             </div>
             <div className="card">
-              <Card />
+              <CardCursos />
             </div>
             <div className="card">
-              <Card />
+              <CardCursos />
             </div>
             <div className="card">
-              <Card />
+              <CardCursos />
             </div>
             <div className="card">
-              <Card />
+              <CardCursos />
             </div>
                       
             

@@ -28,4 +28,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     margin: 10px;
+
+    .card:nth-child(n+4){
+        margin-top: 50px;
+    }
 }

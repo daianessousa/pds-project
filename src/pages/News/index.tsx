@@ -11,9 +11,24 @@ export function News() {
             <h1>Novidades</h1>
           </div>
           <div className="cards">
-            <Card />
-            <Card />
-            <Card />
+          <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
             
             
             
