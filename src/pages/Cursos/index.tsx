@@ -11,9 +11,25 @@ export function Cursos() {
             <h1>Cursos</h1>
           </div>
           <div className="cards">
-            <Card />
-            <Card />
-            <Card />
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+            <div className="card">
+              <Card />
+            </div>
+                      
             
             
             
