@@ -3,7 +3,7 @@ import './styles.scss'
 
 export function CardCursos(){
     return(
-        <div className="content-news">
+        <div className="content-curso">
             {/* <img src="" alt="" /> */}
             <div className="image">
 
