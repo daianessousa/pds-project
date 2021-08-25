@@ -16,8 +16,9 @@ export function Home() {
                   <input type="text" />
                   <label> Senha </label>
                   <input type="text" />
+                  <input type="submit" value="Enviar" className="submit" />
                   <p>
-                     <input type="submit" value="Enviar" className="submit" />
+                     
                      Não possui Conta? <a href="/register">Cadastre-se</a>
                   </p>
                </form>

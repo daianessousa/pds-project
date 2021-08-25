@@ -12,9 +12,9 @@ export function Sidebar(){
                 <p>{user?.name}</p>
             </div>
             <div className="sidebar__buttons">
-                <button>Novidades</button>
-                <button>Cursos</button>
-                <button>Fórum</button>
+                <button><a href="/news">Novidades</a></button>
+                <button><a href="/cursos">Cursos</a></button>
+                <button><a href="/forum">Fórum</a></button>
             </div>
             <p>© HelpJr</p>
         </nav>
