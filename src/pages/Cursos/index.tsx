@@ -8,6 +8,7 @@ interface CursosProps {
   title: string,
   description: string,
   cover: string,
+  url: string,
   link: string,
   id: number,
 }
@@ -36,7 +37,7 @@ export function Cursos() {
         <div className="cards">
           {cursos.map((curso) => (
             <div key={curso.id} className="card">
-              <CardCursos />
+              <CardCursos title={curso.title} description={curso.description} link={curso.link}/>
             </div>
           ))}
 

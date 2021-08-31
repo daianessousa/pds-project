@@ -1,26 +1,31 @@
 import { BiHeart, BiChevronsRight } from "react-icons/bi"
 import './styles.scss'
 
-export function CardCursos() {
+interface CardCursosProps {
+  title: string,
+  description: string,
+  link: string,
+}
+
+export function CardCursos(props: CardCursosProps) {
   return (
     <div className="content-curso">
-      {/* <img src="" alt="" /> */}
       <div className="image">
-
+         <img src="/" alt="Imagem" /> 
       </div>
       <div className="content">
         <div className="content-tittle">
-          <h3>Título em dev</h3>
-          <a href=""><BiHeart /></a>
+          <h3>{props.title}</h3>
+          <a href={props.link}><BiHeart /></a>
         </div>
 
         <span>Atualização em 19/07/2021</span>
         <div className="tipo">
           Gratuito
         </div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+        <p>{props.description}</p>
         <div className="more-info">
-          <a>Saiba mais <BiChevronsRight /></a>
+          <a href={props.link}>Saiba mais <BiChevronsRight /></a>
         </div>
       </div>
     </div>
