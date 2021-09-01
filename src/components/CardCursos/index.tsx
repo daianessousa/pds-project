@@ -11,7 +11,10 @@ interface CardCursosProps {
 export function CardCursos(props: CardCursosProps) {
   return (
     <div className="content-curso">
-         <img className="image" src={props.image} alt="Imagem" /> 
+      <div className="image">
+        <img src={props.image} alt="Imagem"/> 
+      </div>
+         
       <div className="content">
         <div className="content-tittle">
           <h3>{props.title}</h3>
