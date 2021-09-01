@@ -2,17 +2,16 @@ import { BiHeart, BiChevronsRight } from "react-icons/bi"
 import './styles.scss'
 
 interface CardCursosProps {
-  title: string,
-  description: string,
-  link: string,
+  title: string;
+  description: string;
+  link: string;
+  image: string;
 }
 
 export function CardCursos(props: CardCursosProps) {
   return (
     <div className="content-curso">
-      <div className="image">
-         <img src="/" alt="Imagem" /> 
-      </div>
+         <img className="image" src={props.image} alt="Imagem" /> 
       <div className="content">
         <div className="content-tittle">
           <h3>{props.title}</h3>

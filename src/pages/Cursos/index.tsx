@@ -5,14 +5,13 @@ import './styles.scss'
 import api from '../../services/api'
 
 interface CursosProps {
-  title: string,
-  description: string,
-  cover: string,
-  url: string,
-  link: string,
-  id: number,
+  title: string;
+  description: string;
+  link: string;
+  id: number;
+  image: string;
+  coverlink: string;
 }
-
 
 export function Cursos() {
 
@@ -37,7 +36,7 @@ export function Cursos() {
         <div className="cards">
           {cursos.map((curso) => (
             <div key={curso.id} className="card">
-              <CardCursos title={curso.title} description={curso.description} link={curso.link}/>
+              <CardCursos title={curso?.title} image={curso?.coverlink} description={curso.description} link={curso.link}/>
             </div>
           ))}
 
