@@ -6,6 +6,7 @@ import { Register } from "./pages/Register";
 import { Cursos } from "./pages/Cursos"
 import { Forum } from "./pages/Forum"
 import { Room } from "./pages/Room/Room"
+import { AdminRoom } from "./pages/AdminRoom"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/cursos" component={Cursos}/>
           <Route path="/forum" component={Forum}/>
           <Route path="/room" component={Room}/>
+          <Route path="/admin/room" component={AdminRoom}/>
         </Switch>
       </AuthContextProvider>
     </BrowserRouter>
