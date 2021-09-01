@@ -5,6 +5,7 @@ import { News } from "./pages/News";
 import { Register } from "./pages/Register";
 import { Cursos } from "./pages/Cursos"
 import { Forum } from "./pages/Forum"
+import { Room } from "./pages/Room/Room"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/news" component={News}/>
           <Route path="/cursos" component={Cursos}/>
           <Route path="/forum" component={Forum}/>
+          <Route path="/room" component={Room}/>
         </Switch>
       </AuthContextProvider>
     </BrowserRouter>
