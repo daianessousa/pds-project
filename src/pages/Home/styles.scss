@@ -13,12 +13,7 @@
     }
 }
 
-.logo{
-    color: #17C3B2;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-size: 2rem;
-    padding: 2rem 0rem;
-}
+
 
 
 .homeAcess {
@@ -27,6 +22,17 @@
     
     .container {
         max-width: 450px;
+
+        .logo{
+            color: #17C3B2;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            font-size: 5rem;
+            padding: 2rem 0rem;
+        }
+
+        .texto{
+            font-size: 2.5rem;
+        }
     }
 
     label {
@@ -70,22 +76,6 @@
     margin: 32px 0;
     display: flex;
     align-items: center;
-
-    &::before {
-        content: '';
-        flex: 1;
-        height: 1px;
-        background: #a8a8b3;
-        margin-right: 16px;
-    }
-
-    &::after {
-        content: '';
-        flex: 1;
-        height: 1px;
-        background: #a8a8b3;
-        margin-left: 16px;
-    }
 }
 
 .title{

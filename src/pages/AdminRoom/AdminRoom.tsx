@@ -1,20 +1,18 @@
-
-
 import { useHistory, useParams, Link } from 'react-router-dom'
-import logoImg from '../images/logo.svg'
-import deleteImg from '../images/delete.svg'
-import checkImg from '../images/check.svg'
-import answerImg from '../images/answer.svg'
+import logoImg from '../../images/logo.svg'
+import deleteImg from '../../images/delete.svg'
+import checkImg from '../../images/check.svg'
+import answerImg from '../../images/answer.svg'
 
-import { Button } from '../components/Button'
-import { Question } from '../components/Question'
-import { RoomCode } from '../components/RoomCode/RoomCode'
+import { Button } from '../../components/Button'
+import { Question } from '../../components/Question'
+import { RoomCode } from '../../components/RoomCode/RoomCode'
 //import { useAuth } from '../hooks/useAuth'
-import { useRoom } from '../hooks/useRoom'
+import { useRoom } from '../../hooks/useRoom'
 
 
-import '../styles/room.scss'
-import { database } from '../services/firebase'
+import './room.scss'
+import { database } from '../../services/firebase'
 
 
 type RoomParams = {
@@ -59,7 +57,8 @@ export function AdminRoom() {
         <div id="page-room">
             <header>
                 <div className="content">
-                    <Link id="logo" to="/"><img src={logoImg} alt="Logo"/></Link>
+                    {/* <Link id="logo" to="/"><img src={logoImg} alt="Logo"/></Link> */}
+                    <Link to="/forum"><h1>HelpJr Room</h1></Link>
                    
                     <div className="header-buttons">
                         <RoomCode code={roomId} />

@@ -70,7 +70,9 @@ export function Room(){
             <header>
                 <div className="content">
 
-                    <Link id="logo" to="/"><img src="" alt="Logo"/></Link>
+                    {/* <Link id="logo" to="/"><img src="" alt="Logo"/></Link> */}
+                    <Link to="/forum"><h1>HelpJr Room</h1></Link>
+                    
                     
                     <RoomCode code={roomId} />
                 </div>
@@ -103,6 +105,7 @@ export function Room(){
                 </form>
                 
                 <div className="question-list">
+                    <h3>Recentes</h3>
                     {questions.map(question => {
                         return(
                             <Question
