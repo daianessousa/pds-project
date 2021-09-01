@@ -15,7 +15,6 @@ export function CardCursos(props: CardCursosProps) {
       <div className="content">
         <div className="content-tittle">
           <h3>{props.title}</h3>
-          <a href={props.link}><BiHeart /></a>
         </div>
 
         <span>Atualização em 19/07/2021</span>
