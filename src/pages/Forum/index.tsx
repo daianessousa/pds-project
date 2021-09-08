@@ -7,7 +7,7 @@ export function Forum() {
         <Sidebar />
         <div className="container-news">
           <div className="tittle">
-            <h1>Forum</h1>
+            <h1>Fórum</h1>
           </div>
           
           
