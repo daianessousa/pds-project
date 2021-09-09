@@ -1,5 +1,4 @@
 import { useAuth } from '../../hooks/useAuth'
-import userPicture from '../../images/userPicture.svg'
 import { BiNews,BiBook ,BiMessageRounded } from "react-icons/bi"
 import './styles.scss'
 
