@@ -5,12 +5,12 @@ import './styles.scss'
 import api from '../../services/api'
 
 interface CursosProps {
-  title: string;
-  description: string;
+  titulo: string;
+  descricao: string;
   link: string;
   id: number;
   image: string;
-  coverlink: string;
+  imagem: string;
 }
 
 export function Cursos() {
@@ -19,7 +19,7 @@ export function Cursos() {
 
   useEffect(() => {
     api
-      .get<CursosProps[]>("/cursos")
+      .get<CursosProps[]>("/listarcursos")
       .then((response) => setCursos(response.data))
       .catch((err) => {
         console.error("Ocorreu um erro: " + err);
@@ -36,7 +36,7 @@ export function Cursos() {
         <div className="cards">
           {cursos.map((curso) => (
             <div key={curso.id} className="card">
-              <CardCursos title={curso?.title} image={curso?.coverlink} description={curso.description} link={curso.link}/>
+              <CardCursos title={curso?.titulo} image={curso?.imagem} description={curso.descricao} link={curso.link}/>
             </div>
           ))}
 
