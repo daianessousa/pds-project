@@ -22,7 +22,7 @@
 
 }
 
-.cards{
+.cards-cursos{
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -31,4 +31,12 @@
     .card:nth-child(n+4){
         margin-top: 50px;
     }
+}
+
+@media screen and (max-width: 1500px) {
+    .cards-cursos .card:nth-child(n+4){
+        margin-top: 0;
+
+    }
+    
 }

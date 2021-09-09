@@ -11,6 +11,7 @@ interface CursosProps {
   id: number;
   image: string;
   imagem: string;
+  data: string;
 }
 
 export function Cursos() {
@@ -33,10 +34,10 @@ export function Cursos() {
         <div className="tittle">
           <h1>Cursos</h1>
         </div>
-        <div className="cards">
+        <div className="cards-cursos">
           {cursos.map((curso) => (
             <div key={curso.id} className="card">
-              <CardCursos title={curso?.titulo} image={curso?.imagem} description={curso.descricao} link={curso.link}/>
+              <CardCursos title={curso?.titulo} image={curso?.imagem} description={curso.descricao} link={curso.link} data={curso.data}/>
             </div>
           ))}
 

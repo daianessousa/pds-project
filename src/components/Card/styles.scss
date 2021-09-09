@@ -1,48 +1,54 @@
-.content-news{
+.content-card-news{
     width: 20rem;
     height: 22rem;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+
+    .image-news{
+        width: 100%;
+        height: 50%;
+        background-color: gray;
+        border-radius: 15px;
+    }
 
 }
 
-.image{
-    width: 100%;
-    height: 50%;
-    background-color: gray;
-    border-radius: 15px;
-}
 
-.content{
+
+.content-news{
     padding: 10px;
 
     .content-tittle{
         display: flex;
         justify-content: space-between;
-
-        a{
-            color: gray;
-        }
         
     }
 
     span{
-        font-size: .7em;
+        font-size: .6em;
         color: gray;
     }
 
     p{
-        font-size: 0.9em;
+        font-size: 0.8em;
         text-align: justify;
         margin-top: 5px;
     }
 
-    .more-info a{
+    .more-info {
         float: right;
-        font-size: .9em;
-        color: #FE6D73;
+        margin-top: 6px;
+        
+        button{
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            font-size: 0.9em;
+            color: #FE6D73;
+        }
     }
-
-    
+   
 }
+

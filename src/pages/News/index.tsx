@@ -11,6 +11,7 @@ interface NewsProps {
   id: number;
   image: string;
   imagem: string;
+  data: string;
 }
 
 export function News() {
@@ -33,10 +34,10 @@ export function News() {
           <div className="tittle">
             <h1>Novidades</h1>
           </div>
-          <div className="cards">
+          <div className="cards-news">
             {cursos.map((curso) => (
               <div key={curso.id} className="card">
-                <Card title={curso?.titulo} image={curso?.imagem} description={curso.descricao} link={curso.link}/>
+                <Card title={curso?.titulo} image={curso?.imagem} description={curso.descricao} link={curso.link} data={curso.data}/>
               </div>
             ))}
             

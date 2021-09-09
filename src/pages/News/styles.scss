@@ -22,14 +22,22 @@
 
 }
 
-.cards{
-    width: 80%;
+.cards-news{
+    width: 70%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    margin: 10px;
+    flex-wrap: wrap;
+    // margin: 10px;
 
     .card:nth-child(n+4){
         margin-top: 50px;
     }
+}
+
+@media screen and (max-width: 1500px) {
+    .cards-news .card:nth-child(n+4){
+        margin-top: 0;
+
+    }
+    
 }

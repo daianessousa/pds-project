@@ -17,13 +17,15 @@
     align-items: center;
     margin-bottom: -3rem;
     > img {
-      width: 7rem;
-      height: 7rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
+      border: 3px solid white;
     }
     > p {
+      color: white;
       margin-top: .9rem;
-      font-size: .8rem;
+      font-size: 1rem;
     }
   }
    
