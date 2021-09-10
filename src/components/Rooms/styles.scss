@@ -1,0 +1,59 @@
+.room-list{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rbga(0, 0, 0, 0.04);
+    padding: 10px;
+    
+    .content{
+       
+        .footer-buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            p{
+                display: flex;
+                justify-content: center;
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            button{
+                
+                height: 50px;
+                border-radius: 8px;
+                border: 0;
+                background: #17C3B2;
+                color:#FFF;
+                font-weight: 500;
+                padding: 0 15px;
+                cursor: pointer;
+                transition: filter 0.2s;
+                
+                
+            }
+            button:nth-child(1){
+               margin-top: 1rem;
+                
+            }
+
+        }
+    }
+    
+    
+}
+
+@media(width:280px){
+    .room-list{
+        .content{
+            .footer-buttons{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

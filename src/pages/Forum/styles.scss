@@ -1,16 +1,7 @@
-.news{
+.forum{
     background: #DEFBF8;
     display: flex;
 }
-
-.container-news{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
 .tittle{
     width: 100%;
     padding: 3rem;
@@ -21,3 +12,44 @@
     }
 
 }
+.container-forum{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .inputs{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 40vw;
+        
+        form {
+            input {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                height: 50px;
+                border-radius: 8px;
+                padding: 0 16px;
+                background: #fff;
+                border: 1px solid #a8a8b3;
+            }
+            button,
+            input {
+                width: 100%;
+            }
+            button{
+                margin-bottom: 1rem;
+            }
+        }
+        
+    }
+    .room-title{
+        h2{
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+        }
+    }  
+}
+
+

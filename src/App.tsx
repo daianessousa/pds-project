@@ -17,8 +17,8 @@ function App() {
           <Route path="/news" component={News}/>
           <Route path="/cursos" component={Cursos}/>
           <Route path="/forum" component={Forum}/>
-          <Route path="/room" component={Room}/>
-          <Route path="/admin/room" component={AdminRoom}/>
+          <Route path="/rooms/:id" component={Room}/>
+          <Route path="/admin/rooms/:id" component={AdminRoom}/>
         </Switch>
       </AuthContextProvider>
     </BrowserRouter>
