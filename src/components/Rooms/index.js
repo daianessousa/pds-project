@@ -27,14 +27,16 @@ export function Rooms({room}){
               <div className="content">
                 <div className="footer-buttons">
                     <p>{room.title}</p>
+                    <div className="buttons">
+                        {user.id === room.authorId ? <div>{
+                        <button onClick={handleJoinRoom}>Editar Sala</button>    
+                        }</div> : ''}
+
+                        <a href={`/rooms/${room.id}`}>
+                            <button>Entrar na sala</button>
+                        </a>
+                    </div>
                     
-                    {user.id === room.authorId ? <div>{
-                    <button onClick={handleJoinRoom}>Editar Sala</button>    
-                    }</div> : ''}
-                    
-                    <a href={`/rooms/${room.id}`}>
-                        <button>Entrar na sala</button>
-                    </a>
                 </div>
             </div>
         </div>
