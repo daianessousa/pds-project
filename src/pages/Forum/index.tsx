@@ -89,7 +89,7 @@ export function Forum() {
             </form>
           </div>
         </div>
-
+        
         <div className="room-title">
           <h2>Confira a lista de salas criadas:</h2>
         </div>

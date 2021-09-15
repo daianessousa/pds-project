@@ -105,7 +105,7 @@
 
 /* Resposive Styles */
 
-@media screen and (min-width: 0px) {
+@media (min-width: 0px) {
     .home{
         display: grid;
         grid-template-columns: 100%;
@@ -122,10 +122,11 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .home{
         max-width: 1440px;
         grid-template-columns: 40% 60%;
+        
     }
     .initialImage {
         display: flex;
@@ -133,7 +134,14 @@
 
     }
     .homeAcess {
-        padding: 1rem 1rem;
+        .container{
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+        
     }
 }
 
